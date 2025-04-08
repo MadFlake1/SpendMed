@@ -1,0 +1,425 @@
+:root {
+  --navbar-selected: #4a9703;
+}
+/*  This section is for navigation  */
+*{
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+#navbar {
+  background: white;
+  height: 80px;
+  border-bottom: 1px solid black;
+  padding: 0 50px 0 50px;
+}
+#menu {
+  margin-top: 10px;
+}
+#menu li {
+  display: inline;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+#menu li a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+#menu li:hover {
+  color: var(--navbar-selected);
+  border-bottom: 2px solid var(--navbar-selected);
+  padding-bottom: 30px;
+}
+#menu li.a a{
+  color: var(--navbar-selected);
+  border-bottom: 2px solid var(--navbar-selected);
+  padding-bottom: 30px;
+}
+#searchbar  {
+  margin-top: 30px;
+  margin-left: 30px;
+  float: left;
+}
+#searchbar input {
+  border-radius: 20px;
+  padding: 5px
+}
+#logo {
+  width: 35px;
+  float: left;
+  margin-right: 10px;
+}
+#brandname {
+  float: left;
+  margin-top: 15px;
+  margin-left: 25px;
+}
+#brandname h1{
+  font-size: 35px;
+}
+#brandname .spend{
+  color: #030148;
+}
+#brandname .mend{
+  color: #4a9703;
+}
+#navmenu {
+  width: 500px;
+  float: left;
+  margin-left: 200px;
+}
+
+#logo, #navmenu {
+  margin-top: 20px;
+}
+
+#portal {
+  font-weight: bold;
+  background: #4a9703;
+  color: white;
+  border-radius: 7px;
+  padding: 5px 10px 5px 10px;
+  margin-top: 30px;
+  margin-left: 30px;
+  border: 0px;
+}
+.searchicon {
+  background-color: #4a9703;
+  height: 20px;
+  width: 20px;
+}
+
+/*  This section is for Welcome Box */
+#welcomebox {
+  width: 100%;
+  height: 850px;
+  border-bottom: 1px solid black;
+  background-image: url('/C:/Users/Acer/Downloads/ESMERES/assets/images/3.png');
+  background-size: cover;
+}
+#innerbox {
+  position: absolute;
+  margin-top: 150px;
+  margin-left: 200px;
+}
+#welcomebox h1 {
+  font-size: 60px;
+  font-family: "Raleway", sans-serif;
+}
+#welcomebox h4 {
+  font-size: 25px;
+  width: 380px;
+  margin-bottom: 20px;
+}
+#boxes{
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+}
+#boxes .recover, .optimize, .insights{
+  color: white;
+  font-weight: bold;
+  align-items: center;
+  padding: 10px 20px 10px 20px;
+  margin-right: 20px;
+  border: 1px solid black;
+  box-shadow: 0 2px 0 black;
+  cursor: pointer;
+}
+#boxes .recover{
+  background: #030148;
+}
+#boxes .optimize{
+  background: #4a9703;
+}
+#boxes .insights{
+  background: grey;
+}
+#boxes .recover:hover, .optimize:hover, .insights:hover{
+  color: black;
+}
+#boxes .icon{
+  padding-right: 7px;
+}
+#content {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+  background: white;
+  padding: 50px 0;
+  margin-bottom: 1px solid black;
+}
+
+.section {
+  width: 300px;
+  text-align: left;
+}
+
+
+.heading-with-icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.recoverimg {
+  width: 50px;
+  height: 50px;
+}
+
+/* Heading styles for each section */
+.recover-title {
+  color: #4a9703;
+  font-size: 30px;
+  font-weight: bold;
+
+}
+
+.optimize-title {
+  color: #030148;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.insights-title {
+  color: #4a9703;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0;
+}
+
+p {
+  color: black;
+  font-size: 16px;
+  line-height: 1.5;
+  width: 200px;
+  margin-left: 60px;
+}
+.recover-title, .optimize-title, .insights-title{
+  margin-top: 10px;
+}
+#about-us {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 10%;
+  background: #f5f8fa;
+  background-image: url('/C:/Users/Acer/Downloads/ESMERES/assets/images/WEREVEAL.png');
+  background-size: cover;
+}
+
+.about-wrapper {
+  max-width: 600px;
+}
+
+#about-us h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.about-green {
+  color: #4a9703;
+}
+
+.about-blue {
+  color: #030148;
+}
+
+#about-us p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  width: 700px;
+}
+
+.learn-more-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid #4a9703;
+  color: #4a9703;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s, color 0.3s;
+}
+
+.learn-more-btn:hover {
+  background: #4a9703;
+  color: white;
+}
+
+.about-image img {
+  max-width: 400px;
+  height: auto;
+  ;
+}
+#logo-section .logo{
+  justify-content: space-around;
+  background: #f5f8fa;
+  height: 200px;
+  width: 200px;
+  margin-top: 50px;
+  margin-right: 1rem;
+  margin-left: 110px;
+  margin-bottom: 50px;
+
+}
+/* Contact Section */
+#contact {
+  background: url('C:/Users/Acer/Downloads/ESMERES/assets/images/location.png') no-repeat center center;
+  background-size: 100% 100%;
+  width: 100%;
+  min-height: 500px;
+}
+
+.contact-wrapper {
+  padding-top: 50px;
+  margin-left: 1125px;
+  height: 400px;
+  width: auto;
+}
+
+
+.input-row {
+  display: flex;
+  gap: 15px; 
+}
+
+
+.input-container {
+  position: relative;
+  width: 100%;
+  max-width: 220px;
+  margin-top: 10px;
+}
+
+
+#contact input {
+  width: max-content;
+  height: 35px;
+  border-radius: 5px;
+  border: 1px solid black;
+  background-color: #bfbfbf;
+  padding-left: 40px; 
+}
+
+
+.message-container {
+  width: 100%;
+  max-width: 455px; 
+}
+
+#message {
+  width: 400px;
+  height: 100px;
+  padding-left: 40px;
+  padding-top: 10px;
+  resize: none;
+  border-radius: 5px;
+  border: 1px solid black;
+  background-color: #bfbfbf;
+  text-align: left;
+
+}
+
+
+.input-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+}
+
+
+#contact a {
+  margin-top: 20px;
+  float: left;
+  text-decoration: none;
+  color: white;
+  background: #4a9703;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contact-btn:hover {
+  background: #030148;
+}
+
+.contact-green {
+  color: #4a9703;
+}
+
+.contact-blue {
+  color: #030148;
+}
+
+
+footer {
+  background-color: #f8f8f8;
+  padding: 40px 0;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+}
+
+.footer-logo, .footer-links, .footer-help, .footer-contact {
+  width: 22%;
+}
+
+/* Align logo and title horizontally */
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between logo and text */
+}
+
+.footer-logo img {
+  max-width: 50px; /* Adjust as needed */
+}
+
+.footer-logo h1 {
+  font-size: 24px;
+  color: #333;
+  margin: 0;
+}
+
+h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 5px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.social-icons a img {
+  width: 20px;
+  margin-right: 10px;
+}
+
